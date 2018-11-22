@@ -1,12 +1,40 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React ,{Component} from 'react';
+import 'antd/dist/antd.css';
+import { Input,Button ,List} from 'antd';
 
-ReactDOM.render(<App />, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const data = [
+    'Racing car sprays burning fuel into crowd.',
+    'Japanese princess to wed commoner.',
+    'Australian walks 100km after outback crash.',
+    'Man charged over missing wedding girl.',
+    'Los Angeles battles huge wildfires.',
+];
+
+
+class  TodoList extends Component {
+    render(){
+        return(
+            <div>
+            {/*<div>*/}
+                {/*<Input placeholder={'todo list'} style={{width:300}}/>*/}
+                {/*<Button type={"primary"}></Button>*/}
+            {/*</div>*/}
+                {/*<List*/}
+                    {/*header={<div>Header</div>}*/}
+                    {/*footer={<div>Footer</div>}*/}
+                    {/*bordered*/}
+                    {/*dataSource={data}*/}
+                    {/*renderItem={item => (<List.Item>{item}</List.Item>)}*/}
+                {/*/>*/}
+            </div>
+        )
+    }
+}
+
+
+
+
+export default TodoList
+
+
